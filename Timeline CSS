@@ -1,0 +1,118 @@
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0 20px 40px;
+    margin-left: 20px;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 100%;
+    width: 2px;
+    background: #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -55px;
+    top: 5px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    border: 3px solid #007bff;
+    text-align: center;
+    line-height: 24px;
+    color: #007bff;
+    z-index: 100;
+}
+
+.timeline-content {
+    background: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-content:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f8f9fa;
+}
+
+.timeline-content h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Status Colors */
+.timeline-item.status-delivered .timeline-marker {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.timeline-item.status-processing .timeline-marker {
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+
+.timeline-item.status-in_transit .timeline-marker {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.timeline-item.status-pending .timeline-marker {
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.timeline-item.status-delayed .timeline-marker {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.timeline-item.status-cancelled .timeline-marker {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+/* Print styles */
+@media print {
+    .timeline:before {
+        display: none;
+    }
+    
+    .timeline-marker {
+        display: none;
+    }
+    
+    .timeline-content:before {
+        display: none;
+    }
+    
+    .timeline-content {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .action-buttons {
+        display: none;
+    }
+}
