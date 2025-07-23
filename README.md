@@ -20,3 +20,5 @@ Password:Admin@123
 Supervisor
 Username:supervisor
 Password: Super@123
+
+Database name:purefarm.sql
