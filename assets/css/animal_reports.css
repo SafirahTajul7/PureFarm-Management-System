@@ -1,0 +1,188 @@
+/* Animal Reports Styles */
+
+/* Report Card Styles */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 1rem 1.25rem;
+}
+
+.card-header h3, .card-header h5 {
+    margin-bottom: 0;
+    color: #4e73df;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Summary Cards */
+.card.bg-light {
+    background-color: #f8f9fc !important;
+    transition: all 0.3s ease;
+}
+
+.card.bg-light:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.card.bg-light .card-title {
+    color: #5a5c69;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4e73df;
+}
+
+/* Tab Navigation */
+.nav-tabs {
+    border-bottom: 1px solid #e3e6f0;
+    margin-bottom: 1rem;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: #4e73df;
+}
+
+.nav-tabs .nav-link.active {
+    color: #4e73df;
+    background-color: #fff;
+    border: none;
+    border-bottom: 3px solid #4e73df;
+}
+
+.nav-tabs .nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* Table Styles */
+.table {
+    color: #5a5c69;
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: #f8f9fc;
+    color: #4e73df;
+    font-weight: 600;
+    border-top: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(78, 115, 223, 0.05);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Badge and Progress Bar */
+.badge-primary {
+    background-color: #4e73df;
+}
+
+.badge-pill {
+    border-radius: 10rem;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+}
+
+.progress {
+    height: 1.5rem;
+    background-color: #eaecf4;
+    overflow: hidden;
+    border-radius: 0.35rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #4e73df;
+    transition: width 0.6s ease;
+}
+
+/* List Group */
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
+
+.btn-success:hover {
+    background-color: #17a673;
+    border-color: #169b6b;
+}
+
+/* Export Button Styles */
+.btn-success i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .card-header .btn {
+        margin-top: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Status Badges */
+.text-danger {
+    color: #e74a3b !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+/* Chart Containers */
+canvas {
+    max-width: 100%;
+}
